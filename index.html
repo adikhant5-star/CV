@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Template</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    padding:20px;
+}
+
+.resume{
+    max-width:1000px;
+    margin:auto;
+    background:#fff;
+    display:flex;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+/* LEFT SIDE */
+.sidebar{
+    width:30%;
+    background:#6b8f2f;
+    color:white;
+    padding:30px;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.profile img{
+    width:140px;
+    height:140px;
+    border-radius:12px;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.section{
+    margin-bottom:35px;
+}
+
+.section h2{
+    font-size:28px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.line{
+    width:70px;
+    height:2px;
+    background:white;
+    margin-bottom:15px;
+}
+
+.contact p,
+.education p,
+.extra p{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+.skill{
+    margin-bottom:15px;
+}
+
+.skill-name{
+    margin-bottom:5px;
+}
+
+.bar{
+    height:10px;
+    background:#d9d9d9;
+}
+
+.fill{
+    height:100%;
+    background:#244b0a;
+}
+
+/* RIGHT SIDE */
+.content{
+    width:70%;
+    padding:30px 40px;
+}
+
+.header{
+    text-align:center;
+    background:#f1f1f1;
+    padding:30px;
+    margin-bottom:35px;
+}
+
+.header h1{
+    font-size:48px;
+    letter-spacing:2px;
+}
+
+.header .title{
+    margin-top:10px;
+    font-size:20px;
+    color:#666;
+    text-transform:uppercase;
+}
+
+.content-section{
+    margin-bottom:35px;
+}
+
+.content-section h2{
+    color:#6b8f2f;
+    font-size:30px;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+.content-line{
+    width:120px;
+    height:2px;
+    background:#444;
+    margin-bottom:20px;
+}
+
+.summary{
+    line-height:1.8;
+    font-size:17px;
+}
+
+.job{
+    margin-bottom:25px;
+}
+
+.job-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.job-title{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.company{
+    font-size:20px;
+    font-weight:600;
+}
+
+.date{
+    color:#6b8f2f;
+    font-weight:bold;
+}
+
+.job ul{
+    padding-left:20px;
+    line-height:1.8;
+}
+
+.certifications ol{
+    padding-left:25px;
+    line-height:2;
+}
+
+@media(max-width:768px){
+    .resume{
+        flex-direction:column;
+    }
+
+    .sidebar,
+    .content{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- LEFT COLUMN -->
+    <div class="sidebar">
+
+        <div class="profile">
+            <img src="https://i.pinimg.com/originals/8d/c8/62/8dc862dec540240ebc1da9dad084b0a2.jpg" alt="Profile Photo">
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <div class="line"></div>
+
+            <p>✉ muazzma@gmail.com</p>
+            <p>📱 +92 3717473398</p>
+            <p>📍 Sialkot, Pakistan</p>
+            <p>🔗 linkedin.com/in/muazzma</p>
+        </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="line"></div>
+
+            <div class="skill">
+                <div class="skill-name">C</div>
+                <div class="bar"><div class="fill" style="width:80%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">C++</div>
+                <div class="bar"><div class="fill" style="width:85%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Java</div>
+                <div class="bar"><div class="fill" style="width:75%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="bar"><div class="fill" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="bar"><div class="fill" style="width:85%"></div></div>
+            </div>
+        </div>
+
+        <div class="section education">
+            <h2>Education</h2>
+            <div class="line"></div>
+
+            <p>
+                <strong>XIIth</strong><br>
+                Mar 2023<br>
+                Punjab Groups of Colleges<br>
+                Score: 92%
+            </p>
+
+            <p>
+                <strong>Software Engineering</strong><br>
+                Oct 2023 - Present<br>
+                University of Management and Technology<br>
+                CGPA: 3.76
+            </p>
+        </div>
+
+        <div class="section extra">
+            <h2>Extra-Curricular</h2>
+            <div class="line"></div>
+
+            <p>• Volunteer Event Coordinator</p>
+            <p>• Technical Club Member</p>
+            <p>• Hackathon Participant</p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="content">
+
+        <div class="header">
+            <h1>MUAZZMA SHEHZADI</h1>
+            <div class="title">Software Engineering Student</div>
+        </div>
+
+        <div class="content-section">
+            <h2>Summary</h2>
+            <div class="content-line"></div>
+
+            <p class="summary">
+                Innovative and driven Software Engineering student pursuing a
+                Bachelor's degree. Skilled in C++, Java, Python, hardware
+                design, troubleshooting and testing. Seeking internship
+                opportunities to contribute to innovative technology solutions.
+            </p>
+        </div>
+
+        <div class="content-section">
+
+            <h2>Experience</h2>
+            <div class="content-line"></div>
+
+            <div class="job">
+
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Data Science Intern</div>
+                        <div class="company">Innovidu Technologies</div>
+                    </div>
+
+                    <div class="date">
+                        Aug 2020 - Sep 2020
+                    </div>
+                </div>
+
+                <ul>
+                    <li>Collected and cleaned datasets.</li>
+                    <li>Performed data preprocessing and transformation.</li>
+                    <li>Developed machine learning models.</li>
+                    <li>Created visualizations and reports.</li>
+                    <li>Collaborated with cross-functional teams.</li>
+                </ul>
+
+            </div>
+
+            <div class="job">
+
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Digital Technology Intern</div>
+                        <div class="company">Krishitect</div>
+                    </div>
+
+                    <div class="date">
+                        Jun 2021 - Aug 2021
+                    </div>
+                </div>
+
+                <p>
+                    Worked on dataset creation, image processing,
+                    deep learning model design, training,
+                    testing and deployment.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="content-section certifications">
+
+            <h2>Certifications & Courses</h2>
+            <div class="content-line"></div>
+
+            <ol>
+                <li>CCNA 7.0 Module 1</li>
+                <li>Data Science</li>
+                <li>Data Scientist Toolbox</li>
+                <li>Neural Networks and Deep Learning</li>
+                <li>Artificial Intelligence</li>
+                <li>Flutter & Dart Development</li>
+                <li>Python Bootcamp</li>
+            </ol>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
